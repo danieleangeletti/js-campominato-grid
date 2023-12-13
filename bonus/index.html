@@ -19,7 +19,7 @@
         <header>
 
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row">
                     <div class="col-auto">
                         <div class="d-flex align-items-center pt-3 pb-3">
                             <div class="img-container">
@@ -31,10 +31,6 @@
                             </h2>
                         </div>
                     </div>
-
-                    <div class="col-auto d-flex align-items-center pt-3 pb-3">
-                        <button id="play-button" type="button" class="btn btn-secondary">Play</button>
-                    </div>
                 </div>
             </div>
 
@@ -42,8 +38,25 @@
 
         <main>
 
-            <div id="grid" class="container d-flex flex-wrap p-0 bg-success bg-opacity-50">
-                
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <select id="choice-of-difficulty" class="form-select" aria-label="Default select example">
+                            <option selected>Select the difficulty level</option>
+                            <option value="1">Easy</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Hard</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <button id="play-button" type="button" class="btn btn-secondary">Play</button>
+                    </div>
+                </div>
+
+                <div id="grid" class="d-flex flex-wrap p-0">
+                    
+                </div>
             </div>
             
         </main>
