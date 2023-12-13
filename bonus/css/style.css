@@ -3,3 +3,15 @@
     height: 100px;
     line-height: 100px;
 }
+
+.square-2 {
+    width: calc(100% / 9);
+    height: 100px;
+    line-height: 100px;
+}
+
+.square-3 {
+    width: calc(100% / 7);
+    height: 100px;
+    line-height: 100px;
+}
