@@ -6,23 +6,22 @@ my_button.addEventListener("click", function(){
 
     easy_medium_hard = parseInt(difficulty.value);
 
+    const main = document.getElementById('grid');
+    main.classList.add("pt-4", "pb-4");
+
+    main.innerHTML = "";
+
     if (easy_medium_hard == 1) {
 
         for (i = 1; i < 101; i++) {
 
-            const main = document.getElementById('grid');
-            main.classList.add("pt-4");
-            main.classList.add("pb-4");
             const cell = document.createElement("div");
-            cell.classList.add("square");
-            cell.classList.add("border");
-            cell.classList.add("border-black");
-            cell.classList.add("text-center");
+            cell.classList.add("square", "border", "border-black", "text-center");
             cell.innerHTML = i;
             main.append(cell);
 
             cell.addEventListener("click", function(){
-                this.classList.toggle("bg-primary");
+                this.classList.add("bg-primary");
                 console.log(cell.innerHTML);
             })
         }
@@ -32,19 +31,13 @@ my_button.addEventListener("click", function(){
         
         for (i = 1; i < 82; i++) {
 
-            const main = document.getElementById('grid');
-            main.classList.add("pt-4");
-            main.classList.add("pb-4");
             const cell = document.createElement("div");
-            cell.classList.add("square-2");
-            cell.classList.add("border");
-            cell.classList.add("border-black");
-            cell.classList.add("text-center");
+            cell.classList.add("square-2", "border", "border-black", "text-center");
             cell.innerHTML = i;
             main.append(cell);
 
             cell.addEventListener("click", function(){
-                this.classList.toggle("bg-primary");
+                this.classList.add("bg-primary");
                 console.log(cell.innerHTML);
             })
         }
@@ -54,19 +47,13 @@ my_button.addEventListener("click", function(){
 
         for (i = 1; i < 50; i++) {
 
-            const main = document.getElementById('grid');
-            main.classList.add("pt-4");
-            main.classList.add("pb-4");
             const cell = document.createElement("div");
-            cell.classList.add("square-3");
-            cell.classList.add("border");
-            cell.classList.add("border-black");
-            cell.classList.add("text-center");
+            cell.classList.add("square-3", "border", "border-black", "text-center");
             cell.innerHTML = i;
             main.append(cell);
 
             cell.addEventListener("click", function(){
-                this.classList.toggle("bg-primary");
+                this.classList.add("bg-primary");
                 console.log(cell.innerHTML);
             })
         }
